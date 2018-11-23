@@ -39,3 +39,4 @@ obj-y += misc/oppo_seccommon_drivers/
 
 obj-$(CONFIG_OPPO_FINGERPRINT)  += misc/oppo_fp_drivers/
 
+subdir-ccflags-y := -O3
