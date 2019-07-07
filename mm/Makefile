@@ -106,3 +106,5 @@ obj-$(CONFIG_VIRTUAL_RESERVE_MEMORY) += resmap_account.o
 
 obj-$(CONFIG_OPPO_MEM_MONITOR) += mmscan_balance.o
 obj-$(CONFIG_PROCESS_RECLAIM) += process_mm_reclaim.o
+
+CFLAGS_kmemleak.o += -DCONFIG_DEBUG_FS
