@@ -88,3 +88,7 @@ ifdef CONFIG_PRODUCT_REALME_SDM710
 obj-y				+= oppo_nf_hooks/
 obj-y				+= oppo_apps_monitor/
 endif
+
+# optimise for size
+subdir-ccflags-y += $(call cc-option, -g0)
+subdir-ccflags-y += $(call cc-option, -Os)
